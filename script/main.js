@@ -10,3 +10,17 @@ let activebtn = document.querySelector('#active-remove');
              e.target.className = "active";
         });
         
+
+        // display side bar
+        
+
+
+function OpenFucntion() { 
+    document.querySelector('nav').style.width = '250px';
+}
+       
+
+function CloseFucntion() { 
+    document.querySelector('nav').style.width = '0px';
+}
+    
