@@ -99,13 +99,40 @@ width: 100%;
 }
 // section B
 .sectionB{
-
     width: 100%;
-    height: 400px;
     // clip-path: polygon(0 6%, 100% 30%, 100% 100%, 0% 100%);
     background-color: #0f76dd;
-
 }
+
+img{
+    width: 100%;
+}
+.works{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.card-image{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.card-image img{
+    max-width: 100%;
+    transition: all 1s;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card-image:hover img {
+    transform: scale(3);
+}
+
+
+
 @media screen and (max-width :768px){
     section{
         width: 100%;
@@ -137,5 +164,12 @@ width: 100%;
     .hamburg .fas{
         display: block;
     }
-  
+  .works{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px){
+    .works{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
